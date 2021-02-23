@@ -1,0 +1,12 @@
+<h1>Exercicio Python</h1>
+{% if palavra %}
+<p class="upper"><strong>Upper:</strong> {{ palavra }} {% endif %}</p>
+<form method="post">
+  <dl>
+    <dt>Palavra:</dt>
+    <dd>
+      <input type="text" name="palavra" value="{{request.form.palavra }}" />
+    </dd>
+  </dl>
+  <p><input type="submit" value="Upper" /></p>
+</form>
